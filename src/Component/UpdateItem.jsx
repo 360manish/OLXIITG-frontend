@@ -59,7 +59,7 @@ const UpdateItem = (props) => {
     const [itemData, setItemData] = useState({ category: '', brand: '', description: '', price: '', buyingdate: '' })
 
     const fetchDetails = async () => {
-        const url = `http://localhost:5000/api/item/getItem/${id}`
+        const url = `https://campus-olx-iitg.onrender.com/api/item/getItem/${id}`
         const response = await fetch(url, {
             method: 'GET',
             headers: {
@@ -88,7 +88,7 @@ const UpdateItem = (props) => {
         formData.append('Image', image);
         axios({
             method: "patch",
-            url: `http://localhost:5000/api/item/editItem/${id}`,
+            url: `https://campus-olx-iitg.onrender.com/api/item/editItem/${id}`,
             data: formData,
             headers: { "Content-Type": "multipart/form-data", 'auth-token': localStorage.getItem('token') },
         })
@@ -139,7 +139,7 @@ const UpdateItem = (props) => {
                         <div class="card mb-4 mb-xl-0" style={{ borderRadius: "25px", borderColor: "black", borderWidth: "2px" }}>
                             <div class="card-header">Item Image</div>
                             <div class="card-body text-center">
-                                <img class="img-account-profile mb-2" style={{ width: "auto", height: "210px", borderRadius: "25px", borderColor: "black", borderWidth: "2px", marginRight: "10px"}} src={`http://localhost:5000/${item[0].img_address}`} alt="" />
+                                <img class="img-account-profile mb-2" style={{ width: "auto", height: "210px", borderRadius: "25px", borderColor: "black", borderWidth: "2px", marginRight: "10px"}} src={`https://campus-olx-iitg.onrender.com/${item[0].img_address}`} alt="" />
                                 <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
                                 {/* <button class="btn btn-primary" type="button">Upload new image</button> */}
                             </div>

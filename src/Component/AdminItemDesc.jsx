@@ -10,7 +10,7 @@ const AdminItemDesc = () => {
     const id = params.id;
 
     const fetchItem = async () => {
-        const url = `http://localhost:5000/admin/getItem/${id}`
+        const url = `https://campus-olx-iitg.onrender.com/admin/getItem/${id}`
         const response = await fetch(url, {
             method: 'GET',
             headers: {
@@ -37,7 +37,7 @@ const AdminItemDesc = () => {
         <>
             <Container>
                 <Card style={{ alignItems: "center" }} className="my-4">
-                    <Card.Img variant="top" style={{ width: "175%", height: "auto", "border-radius": "25px" }} src={`http://localhost:5000/${itembyID[0].img_address}`} />
+                    <Card.Img variant="top" style={{ width: "175%", height: "auto", "border-radius": "25px" }} src={`https://campus-olx-iitg.onrender.com/${itembyID[0].img_address}`} />
 
                 </Card>
                 <div className='row my-4'>

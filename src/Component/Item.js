@@ -14,10 +14,10 @@ function Item(props) {
   const [isLiked,setLiked] = useState(false);
   
   const [imageUrl, setImageUrl] = useState(
-    "http://localhost:5000/" + item.img_address
+    "https://campus-olx-iitg.onrender.com/" + item.img_address
   );
   const getisLiked=async ()=>{
-    const url=`http://localhost:5000/api/item/isLiked/${item._id}`
+    const url=`https://campus-olx-iitg.onrender.com/api/item/isLiked/${item._id}`
     const response = await fetch(url, {
         method: 'GET',
         headers: {

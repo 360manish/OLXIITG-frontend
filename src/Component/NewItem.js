@@ -14,7 +14,7 @@ export default function NewItem() {
     formData.append('Image', image);
     axios({
       method: "post",
-      url: `http://localhost:5000/api/item/newItem/${itemData.category}`,
+      url: `https://campus-olx-iitg.onrender.com/api/item/newItem/${itemData.category}`,
       data: formData,
       headers: { "Content-Type": "multipart/form-data", 'auth-token': localStorage.getItem('token') },
     })

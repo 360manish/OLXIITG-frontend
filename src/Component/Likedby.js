@@ -11,7 +11,7 @@ const Likedby = () => {
     const [users, setUsers] = useState([]);
 
     const fetchUsers = async () => {
-        const url = `http://localhost:5000/api/item/getLikedBy/${id}`;
+        const url = `https://campus-olx-iitg.onrender.com/api/item/getLikedBy/${id}`;
         const response = await fetch(url, {
             method: 'GET',
             headers: {

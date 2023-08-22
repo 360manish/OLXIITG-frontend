@@ -8,7 +8,7 @@ const ItemState=(props)=>{
     const [itembycategory,setItembyCategory]=useState([])
     const [userLikedItems,setUserLikedItems]=useState([])
     const fetchlikedItem=async()=>{
-        const url=`http://localhost:5000/api/item/userLikedItems`
+        const url=`https://campus-olx-iitg.onrender.com/api/item/userLikedItems`
         const response = await fetch(url, {
             method: 'GET',
             headers: {
@@ -22,7 +22,7 @@ const ItemState=(props)=>{
         setUserLikedItems(json)
     }
     const likeItem=async(id)=>{
-        const url=`http://localhost:5000/api/item/addToFavorite/${id}`
+        const url=`https://campus-olx-iitg.onrender.com/api/item/addToFavorite/${id}`
         const response = await fetch(url, {
             method: 'GET',
             headers: {
@@ -33,7 +33,7 @@ const ItemState=(props)=>{
         return response.status;
     }
     const deleteItem=async(id)=>{
-        const url=`http://localhost:5000/api/item/delItem/${id}`
+        const url=`https://campus-olx-iitg.onrender.com/api/item/delItem/${id}`
         const response = await fetch(url, {
             method: 'DELETE',
             headers: {
@@ -44,7 +44,7 @@ const ItemState=(props)=>{
         return response.status;
     }
     const fetchUserItems=async()=>{
-        const url=`http://localhost:5000/api/item/user-items`
+        const url=`https://campus-olx-iitg.onrender.com/api/item/user-items`
         const response = await fetch(url, {
             method: 'GET',
             headers: {
@@ -59,7 +59,7 @@ const ItemState=(props)=>{
         console.log("useritem:- ",json)
     }
     const fetchItembyID=async (id)=>{
-        const url=`http://localhost:5000/api/item/getItem/${id}`
+        const url=`https://campus-olx-iitg.onrender.com/api/item/getItem/${id}`
         const response = await fetch(url, {
             method: 'GET',
             headers: {
@@ -73,7 +73,7 @@ const ItemState=(props)=>{
         setItembyID(json)
     }
     const fetchByCategory=async(cat)=>{
-        const url=`http://localhost:5000/api/item/allitems/${cat}`
+        const url=`https://campus-olx-iitg.onrender.com/api/item/allitems/${cat}`
         const response = await fetch(url, {
             method: 'GET',
             headers: {
@@ -86,7 +86,7 @@ const ItemState=(props)=>{
         setItembyCategory(json)
     }
     const fetchItem=async ()=>{
-        const url=`http://localhost:5000/api/item/getAllItem`
+        const url=`https://campus-olx-iitg.onrender.com/api/item/getAllItem`
         const response = await fetch(url, {
             method: 'GET',
             headers: {

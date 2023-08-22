@@ -16,7 +16,7 @@ function ResetPassword(props) {
 
     const formSubmitHandler = async (event) => {
         event.preventDefault();
-        const url = "http://localhost:5000/api/auth/resetpassword-email";
+        const url = "https://campus-olx-iitg.onrender.com/api/auth/resetpassword-email";
         const data = {
             email: em.email,
         }

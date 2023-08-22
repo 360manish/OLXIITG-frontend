@@ -8,7 +8,7 @@ const UserProf = () => {
     const [items, setItem] = useState([]);
 
     const getLikedByItem = async () => {
-        const url = `http://localhost:5000/api/auth/getuser/${id}`
+        const url = `https://campus-olx-iitg.onrender.com/api/auth/getuser/${id}`
         const response = await fetch(url, {
             method: 'GET',
             headers: {

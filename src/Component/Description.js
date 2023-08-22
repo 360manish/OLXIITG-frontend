@@ -11,7 +11,7 @@ export default function Description(props) {
     <>
     <Container>
     <Card style={{alignItems:"center"}} className="my-3">
-  <Card.Img variant="top" style={{width:"175%",height:"auto","border-radius": "25px"}} src={`http://localhost:5000/${itembyID[0].img_address}`} />
+  <Card.Img variant="top" style={{width:"175%",height:"auto","border-radius": "25px"}} src={`https://campus-olx-iitg.onrender.com/${itembyID[0].img_address}`} />
 
     </Card>
     <div className='row my-4'>

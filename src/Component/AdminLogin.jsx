@@ -22,7 +22,7 @@ const AdminLogin = (props) => {
 
     const loginSubmitHandler = async (event) => {
         event.preventDefault();
-        const url = "http://localhost:5000/admin/login";
+        const url = "https://campus-olx-iitg.onrender.com/admin/login";
         const data = {
             email: loginCred.email,
             password: loginCred.password,

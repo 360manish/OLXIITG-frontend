@@ -8,7 +8,7 @@ export default function Profile(props) {
 
 
     const fetchuser=async ()=>{
-      const url=`http://localhost:5000/api/auth/getuser`
+      const url=`https://campus-olx-iitg.onrender.com/api/auth/getuser`
       const response = await fetch(url, {
           method: 'GET',
           headers: {

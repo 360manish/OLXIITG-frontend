@@ -10,7 +10,7 @@ export default function Editprofile(props) {
 
   const handleSaveChanges = async (name, hostel, contact) => {
 
-    const url = `http://localhost:5000/api/auth/edit-details`
+    const url = `https://campus-olx-iitg.onrender.com/api/auth/edit-details`
     const response = await fetch(url, {
       method: 'PATCH',
       headers: {
@@ -35,7 +35,7 @@ export default function Editprofile(props) {
 
   const handlePassChanges = async (curr, newp, confp) => {
 
-    const url = `http://localhost:5000/api/item/change_password`
+    const url = `https://campus-olx-iitg.onrender.com/api/item/change_password`
     const response = await fetch(url, {
       method: 'PATCH',
       headers: {

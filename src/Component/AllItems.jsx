@@ -8,7 +8,7 @@ const AllItems = (props) => {
     
 
     const fetchItem = async (id) => {
-        const url = `http://localhost:5000/admin/allitems`
+        const url = `https://campus-olx-iitg.onrender.com/admin/allitems`
         const response = await fetch(url, {
             method: 'GET',
             headers: {

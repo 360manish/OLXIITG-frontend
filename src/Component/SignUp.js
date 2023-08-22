@@ -13,7 +13,7 @@ export default function SignUp(props) {
 
     const formSubmitHandler = async (event) => {
         event.preventDefault();
-        const url = "http://localhost:5000/api/auth/createuser";
+        const url = "https://campus-olx-iitg.onrender.com/api/auth/createuser";
         const data = {
             name: em.name,
             email: em.email,

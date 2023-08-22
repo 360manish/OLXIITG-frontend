@@ -29,7 +29,7 @@ function SetPassword(props) {
 
     const passwordSubmitHandler = async (event) => {
         event.preventDefault();
-        const url = `http://localhost:5000/api/auth/confirm-email/${token}`;
+        const url = `https://campus-olx-iitg.onrender.com/api/auth/confirm-email/${token}`;
         const data = {
             password: passCred.password,
         }

@@ -9,7 +9,7 @@ const AllUsers = () => {
     const [users,setUsers] = useState([]);
 
     const fetchUsers = async () => {
-        const url = `http://localhost:5000/admin/users`;
+        const url = `https://campus-olx-iitg.onrender.com/admin/users`;
         const response = await fetch(url, {
             method: 'GET',
             headers: {

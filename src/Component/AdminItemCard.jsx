@@ -6,7 +6,7 @@ const AdminItemCard = (props) => {
     const[banText,setBanText] = useState("");
 
     const banItem = async () => {
-        const url = `http://localhost:5000/admin/banItem/${item._id}`
+        const url = `https://campus-olx-iitg.onrender.com/admin/banItem/${item._id}`
         const response = await fetch(url, {
             method: 'PATCH',
             headers: {
@@ -44,7 +44,7 @@ const AdminItemCard = (props) => {
 
     return (
         <div className="card my-4" style={{ borderRadius: "25px", borderColor: "black", borderWidth: "2px" }}>
-            <img src={`http://localhost:5000/${item.img_address}`} alt="Denim Jeans" style={{ width: "100%", paddingTop: "5px", borderRadius: "25px" }} />
+            <img src={`https://campus-olx-iitg.onrender.com/${item.img_address}`} alt="Denim Jeans" style={{ width: "100%", paddingTop: "5px", borderRadius: "25px" }} />
 
             <h2 className="price my-2">Rs. {item.price}</h2>
             <p>{item.description.slice(0, 100)}...</p>

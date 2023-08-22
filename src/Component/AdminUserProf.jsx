@@ -9,7 +9,7 @@ const AdminUserProf = (props) => {
     const [banText,setBanText] = useState("");
 
     const getLikedByItem = async () => {
-        const url = `http://localhost:5000/admin/getuser/${id}`
+        const url = `https://campus-olx-iitg.onrender.com/admin/getuser/${id}`
         const response = await fetch(url, {
             method: 'GET',
             headers: {
@@ -23,7 +23,7 @@ const AdminUserProf = (props) => {
     }
 
     const banUser = async ()=>{
-        const url = `http://localhost:5000/admin/banuser/${id}`
+        const url = `https://campus-olx-iitg.onrender.com/admin/banuser/${id}`
         const response = await fetch(url, {
             method: 'PATCH',
             headers: {
